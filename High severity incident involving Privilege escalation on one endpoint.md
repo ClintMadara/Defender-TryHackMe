@@ -42,10 +42,10 @@ Registry values: 2
 
 I have confirmed that this is a true positive. The affected endpoint is vm-evil-xdr, the compromised user account is evil-xdr, privilege escalation occurred, and there were multiple IPs, files and processes involved. The incident contains 21 alerts and Defender has already isolated the device and contained the account. I have documented the timeline and actions taken. This incident therefore will be escalated to L2 for further investigation</br>
 
-Serious indicators of a true positive
--High severity
--Attempted to disable defender
--Meterpreter deployed onto the machine via DLL injection
--UAC pop up was bypassed by configuring Windows Registry 
+### Serious indicators of a true positive</br> ###
+-High severity</br>
+-Attempted to disable defender</br>
+-Meterpreter deployed onto the machine via DLL injection</br>
+-UAC pop up was bypassed by configuring Windows Registry to escalate privileges</br>
 -There was lateral movement via remote logon that was blocked
 
