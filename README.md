@@ -33,6 +33,25 @@ Registry values: 2
 <img width="1848" height="737" alt="image" src="https://github.com/user-attachments/assets/c970cc4c-886e-4beb-8978-320cb7509a7e" />
 
 -Malcious tool named Meterpreter, was deployed onto the target machine (vm-evil-xdr) via a dynamic link library injection **(Mitre ID: T1055.001)**
+</br>
+<img width="1357" height="225" alt="image" src="https://github.com/user-attachments/assets/aec7c144-fc20-425e-a384-7c825aabe2e0" /></br>
+
+-Attacker was able to bypass UAC prompt/pop up by edigin registry files 
+
+<img width="378" height="109" alt="image" src="https://github.com/user-attachments/assets/d7c43f98-c9e2-4155-81a0-55b95fd88bc0" /></br>
+
+<img width="1840" height="507" alt="image" src="https://github.com/user-attachments/assets/d6eabbd8-b0f1-468f-af5c-7b921dcedec6" />
+
+I have confirmed that this is a true positive. The affected endpoint is vm-evil-xdr, the compromised user account is evil-xdr, privilege escalation occurred, and there were multiple IPs, files and processes involved. The incident contains 21 alerts and Defender has already isolated the device and contained the account. I have documented the timeline and actions taken. This incident therefore will be escalated to L@ for further investigation
+
+Serious indicators of a true positive
+-High severity
+-Attempted to disable defender
+-Meterpreter deployed onto the machine via DLL injection
+-UAC pop up was bypassed by configuring Windows Registry 
+-There was lateral movement via remote logon that was blocked
+
+
 
 
 
