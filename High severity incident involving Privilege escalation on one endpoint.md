@@ -1,4 +1,4 @@
--Start with the incident overview
+### Start with the incident overview ###
 
 I see this is a High-severity, active, multi-stage incident involving privilege escalation.
 
